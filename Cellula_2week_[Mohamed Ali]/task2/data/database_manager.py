@@ -10,9 +10,7 @@ class DatabaseManager:
 
         self.create_database()
 
-    ##################################################
-    # Create CSV Database
-    ##################################################
+    
 
     def create_database(self):
 
@@ -30,9 +28,7 @@ class DatabaseManager:
                 index=False
             )
 
-    ##################################################
-    # Save New Record
-    ##################################################
+  
 
     def save_record(self, user_input, prediction):
 
@@ -56,9 +52,7 @@ class DatabaseManager:
 
         )
 
-    ##################################################
-    # Read Database
-    ##################################################
+    
 
     def get_all_records(self):
 
@@ -66,10 +60,7 @@ class DatabaseManager:
             self.database_path
         )
 
-    ##################################################
-    # Clear Database (Optional)
-    ##################################################
-
+    
     def clear_database(self):
 
         df = pd.DataFrame(
